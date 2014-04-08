@@ -1,0 +1,86 @@
+//
+// module: elements
+//
+.style-guide-header {
+	font-family: $alpha-font-family;
+	font-weight: $beta-font-weight;
+}
+
+
+.main-content {
+	@include box-(12,1,1);
+}
+
+	.v-styleguide .section-title {
+		color: $beta-text-color;
+		font-weight: $beta-font-weight;
+		border-bottom: 3px solid $beta-text-color;
+		margin-bottom: 14/$alpha-font-size*1em;
+		@include baseline-dimensions(1,1,1,0);
+	}
+
+	.v-styleguide .scss {
+		display: inline-block;
+		color: $beta-text-color;
+		background: #F0F0F0;
+		border: 1px solid $beta-ui-color;
+		border-radius: $radius;
+		padding: 3px;
+	}
+
+	.example-form-grid {
+		label {
+			@include box-(12,1,1);
+		}
+
+		@include mq($bp2) {
+			label {
+				@include box-(8,1,1);
+			}
+
+			.name {
+				@include box-(8,1,.5)
+			}
+
+			.email {
+				@include box-(8,.5,1)
+			}
+
+			.street {
+				@include box-(12,1,.5);
+			}
+
+			.city {
+				@include box-(12,.5,1);
+			}
+
+			.number {
+				@include box-(6,.5,1);
+			}
+			.zip-code {
+				@include box-(6,1,.5);
+			}
+
+			.full-width {
+				@include box-(12,1,1);
+			}
+
+			.oneliner .postfix {
+				@include box-(8,0,1);
+			}
+
+				.oneliner .postfix button {
+					@include postfix;
+				}
+
+			.oneliner .prefix {
+				@include box-(8,1,0);
+			}
+
+				.oneliner .prefix input {
+					@include prefix;
+				}
+		}
+	}
+
+

@@ -1,0 +1,52 @@
+
+
+.style-guide-color {
+	//@extend %rounded;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	@include margin-bottom(.25);
+	border: 1px solid $alpha-text-color;
+}
+
+
+.alpha.style-guide-color {
+	background-color: $alpha-ui-color;
+}
+
+.beta.style-guide-color {
+	background-color: $beta-ui-color;
+}
+
+.delta.style-guide-color {
+	background-color: $delta-ui-color;
+}
+
+.gamma.style-guide-color {
+	background-color: $gamma-ui-color;
+}
+
+.epsilon.style-guide-color {
+	background-color: $epsilon-ui-color;
+}
+
+
+/*
+.zeta.style-guide-color {
+	background-color: $zeta-ui-color;
+}
+*/
+
+.color, .color2{
+	width: 17%;
+	float: left;
+	@include margin-tb(1,1.5);
+}
+
+.color{
+	margin-right: 3.75%;
+}
+
+.color2{
+
+}

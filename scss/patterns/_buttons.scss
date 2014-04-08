@@ -1,0 +1,105 @@
+// Buttons
+
+.buttons{
+	@include margin-tb(0,1);
+	padding-left: 1em;
+		margin-left: -20px;
+
+}
+
+.btn,
+a.btn,
+.btn-secondary,
+input.btn-secondary,
+input[type="submit"].btn-secondary,
+a.btn-secondary {
+
+	@extend %btn;
+	@include btn-s;
+	@include margin-tb(0.5,0.5);
+	@include mq($bp3) {
+		@include btn-m;
+		@include btn-inlineblock;
+		margin-right: 22px;
+	}
+
+	@include mq($bp5) {
+		@include btn-l;
+		margin-left: 26px;
+		margin-right: 26px;
+	}
+}
+
+
+.btn,
+a.btn {
+	font-weight: $delta-font-weight;
+	//@include btn-color;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.btn-secondary,
+input.btn-secondary,
+input[type="submit"].btn-secondary,
+a.btn-secondary {
+	//@include btn-color($beta-ui-color);
+}
+
+
+
+.btn-1{
+	color: red;
+	background-color:white;
+	border: 1px solid red;
+
+		&:hover, &:visited, &:focus, &:active {
+			color: red;
+			background-color:white;
+			border: 1px solid red;
+		}
+}
+
+
+.btn-3{
+	color: orange;
+	background-color:white;
+	border: 1px solid orange;
+
+		&:hover, &:visited, &:focus, &:active {
+			color: orange;
+			background-color:white;
+			border: 1px solid orange;
+		}
+}
+
+
+.btn-4{
+	color: green;
+	background-color:white;
+	border: 1px solid green;
+
+		&:hover, &:visited, &:focus, &:active {
+			color: green;
+			background-color:white;
+			border: 1px solid green;
+		}
+}
+
+
+
+
+.btn-5{
+	color: blue;
+	background-color:white;
+	border: 1px solid blue;
+
+		&:hover, &:visited, &:focus, &:active {
+			color: blue;
+			background-color:white;
+			border: 1px solid blue;
+		}
+}
+
+
+

@@ -1,0 +1,93 @@
+// designpersona
+
+.persona {
+	@include padding-tb(1,1.5);
+
+	a,
+	span {
+		padding: 0 10px;
+		border: 1px solid $gamma-ui-color;
+		//margin-left: -1px;
+	}
+
+	span {
+		color: $beta-text-color;
+	}
+
+	@include designpersona;
+}
+
+
+
+//
+// Image
+//
+
+.persona-img{
+	display: none;
+
+	@include mq($bp3) {
+		display: block;
+		float: left;
+		width: 20%;
+		@include margin-tb(0,1.3);
+	}
+}
+
+
+.mask {
+	position: relative;
+	overflow: hidden;
+}
+
+.mask img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+.ratio--square {
+	padding-top:20%; // 1/1 * 100 (-10 for optical correction)
+}
+
+//
+// intro
+//
+
+.persona-intro {
+	@include mq($bp3) {
+	float: right;
+	width: 75%;
+	@include padding-tb(0,1);
+	}
+
+	h3{
+		@include margin-tb(-0.7,0);
+	}
+
+	@include padding-tb(0,1.2);
+
+
+}
+
+//
+// info
+//
+
+.designpersona-info {
+
+	@include mq($bp3) {
+		margin-left: 25%;
+		@include padding-tb(0,0);
+	}
+	ul{
+		li{
+			@include margin-tb(0.1,0.1);
+		}
+	}
+
+
+}
+
+

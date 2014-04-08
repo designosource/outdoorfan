@@ -1,0 +1,2 @@
+title: Outdoorfan
+exclude: ['_site','scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot']

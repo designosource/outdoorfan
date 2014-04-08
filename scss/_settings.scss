@@ -1,0 +1,121 @@
+//
+// Chopstick settings
+//
+
+// Debug
+
+$debug-mode: false;
+
+// Typography
+
+ @font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+$show-baseline-grid: false; // toggle the visibility of the baseline (true/false)
+$baseline-holder: holder; // set the classname of the element which will show the baseline
+$grid-color: rgba(#000,0.1); // set the baseline grid color and opacity
+
+$alpha-font-family	: "roboto", sans-serif;
+$alpha-font-size	: 16; // pixel-value
+$alpha-font-weight	: 500;
+$alpha-line-height	: 1.5; // em-value
+$alpha-baseline-grid: 7; // pixel-value
+$alpha-leading		: 1; // multiplier
+
+$beta-font-family	: "buenard", serif;
+$beta-font-size		: 19.77; // pixel-value
+$beta-font-weight	: 700;
+
+$delta-font-family  : "icomoon";
+$beta-font-size		: 25.888; // pixel-value
+$delta-font-weight  : 100;
+// Grid
+
+$grid-gutter	: 20;
+$grid-column	: 60;
+$grid-columns	: 12;
+
+// Breakpoints calculated in em's, always based on 16px base-value
+
+$bp1: 320/16*1em;
+$bp2: 480/16*1em;
+$bp3: 680/16*1em;
+$bp4: 960/16*1em;
+$bp5: 1140/16*1em;
+
+// the last breakpoint is calculated in shared/_grid.scss
+// $bp5: #{1200 / $alpha-font-size}em;
+
+// Modular scale settings
+
+$ratio				: 1.414;
+$importantnumber	: 44;
+$leading			: 1;
+$base-size			: $alpha-font-size/16*1em;
+
+// manual modular scale font sizes
+// based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+$ms-2 				: 12;
+$ms-1 				: 14;
+$ms1 			 	: 18;
+$ms2 			 	: 21;
+$ms3 			 	: 23;
+$ms4 			 	: 28;
+$ms5 			 	: 31;
+$ms6 			 	: 37;
+$ms7 			 	: 42;
+$ms8 			 	: 50;
+$ms10 			 	: 56;
+$ms11			 	: 67;
+$ms12			 	: 75;
+$ms13			 	: 89;
+$ms14			 	: 100;
+
+// UI
+
+$radius			: 5px;
+$radius2        : 3px;
+$border			: 1px;
+$depth			: 0%; // Range: 0-100%
+$contrast		: 91%; // Range: 0-100%
+$shadow			: 21%; // Range: 0-100%
+$highlight		: 0%; // Range: 0-100%
+
+// Colors
+
+$alpha-text-color	: #303030;
+$beta-text-color	: #303030; // Grey
+
+$alpha-ui-color		: #1746A6; // Blue
+$beta-ui-color		: #43A7F5  ; // Light Blue
+$gamma-ui-color		: #303030; // Dark Grey
+$delta-ui-color		: #FFF; // White
+$epsilon-ui-color      : #A9DB06; // Green
+
+$bg-color     : #FFF; // Used for backgrounds
+
+$error-color 		: red;
+$success-color 		: #62BF40;
+$notice-color 		: #FFE049;
+
+$error-color 		: #d00c00;
+$success-color 		: #72aa2e;
+$notice-color 		: #ffe38a;
+
+// Links
+
+$alpha-link-color			: $alpha-ui-color;
+$alpha-link-colorhover		: darken($alpha-link-color, 10);
+$alpha-link-colorfocus		: darken($alpha-link-color, 10);
+$alpha-link-coloractive		: lighten($alpha-link-color, 10);
+$alpha-link-colorvisited	: darken($alpha-link-color, 5);

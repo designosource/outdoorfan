@@ -1,0 +1,98 @@
+
+//
+// Icons
+//
+
+
+
+.style-guide-icon, .style-guide-icon2, .style-guide-icon3{
+	float: left;
+	text-align: center;
+
+	line-height: 32px;
+	@include margin-tb(0,1);
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width: 33px;
+	height: 33px;
+
+
+
+
+	@include mq($bp3) {
+		margin-left: 19px;
+		margin-right: 19px;
+		width: 50px;
+		height: 50px;
+		line-height: 47px;
+		font-size: 2em;
+	}
+
+	 @include mq($bp4) {
+		margin-left: 16px;
+		margin-right: 16px;
+		width: 56px;
+		height: 56px;
+		line-height: 54px;
+		font-size: 2em;
+	}
+
+
+	@include mq($bp5) {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 2em;
+	}
+
+
+	//color: $alpha-ui-color;
+	//background-color: lighten($epsilon-ui-color,30);
+}
+
+.style-guide-icon2{
+	background-color: $alpha-text-color;
+	color: $delta-ui-color;
+
+border-radius: $radius;
+}
+
+.style-guide-icon3{
+	color: $alpha-text-color;
+	border: 1px solid $alpha-text-color;
+	 @include mq($bp3) {
+		border: 2px solid $alpha-text-color;
+	}
+	border-radius: $radius;
+}
+
+
+.icon{
+
+	font-family: $delta-font-family;
+
+}
+
+.icon-quote:before {
+	content: "\e600";
+}
+.icon-checkmark:before {
+	content: "\e601";
+}
+.icon-cancel:before {
+	content: "\e602";
+}
+.icon-chart:before {
+	content: "\e603";
+}
+.icon-location:before {
+	content: "\e604";
+}
+.icon-comments:before {
+	content: "\e605";
+}
+.icon-attachment:before {
+	content: "\e606";
+}
